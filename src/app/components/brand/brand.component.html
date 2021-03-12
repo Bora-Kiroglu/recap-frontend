@@ -1,0 +1,12 @@
+<table *ngIf="dataLoaded==true">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>CarBrand</th>
+        </tr>
+    </thead>
+    <tr *ngFor = "let brand of brands">
+        <td>{{brand.brandId}}</td>
+        <td>{{brand.carBrand}}</td>
+    </tr>
+</table>
